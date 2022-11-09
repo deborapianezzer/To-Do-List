@@ -106,7 +106,17 @@ div h2 {
 div.topics ul li{
   margin-bottom: 8px;
 }
-div.topics input {
+div.topics li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+div.topics input.checkbox {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+}
+div.topics input.text{
   width: 500px;
   height: 65px;
   padding-left: 8px;
