@@ -21,12 +21,21 @@ body {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 100px;
   gap: 100px;
 }
 
 main h2 {
   margin-bottom: 8px;
+}
+main div.title-list {
+  display: flex;
+  justify-content: center;
+}
+main div.title-topic {
+  display: flex;
+  justify-content: center;
 }
 /* Div Lists */
 div.lists ul {
@@ -121,7 +130,11 @@ div.topics li {
 div.topics input.checkbox {
   width: 30px;
   height: 30px;
-  background-color: #FFFFFF;
+  transition: transform 0.3s;
+}
+div.topics input.checkbox:hover {
+  cursor: pointer;
+  transform: scale(1.2,1.2);
 }
 
 div.topics input.text{
@@ -132,6 +145,10 @@ div.topics input.text{
   border: 1px solid #81D8F7;
   border-radius: 6px;
   font-size: 16px;
+}
+div.topics input.text:hover {
+  cursor: pointer;
+  border: 3px solid #81D8F7;
 }
 
 
